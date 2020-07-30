@@ -1,7 +1,7 @@
 # LusccasFlix
 
 <p align="center">
-  <img alt="Logo do projeto" width="150px" src="./src/img/Logot60.png" />
+  <img alt="Logo do projeto" width="150px" src="https://github.com/luccasadriano/lusccasflix/blob/master/src/assets/img/Logot60.png />
 </p>
 
 pt-BR
@@ -12,7 +12,7 @@ pt-BR
 
 Logo após baixar o projeto, acessar o diretório e você pode executar:
 
-##```sh
+```sh
 npm install
 npm start
 ```
@@ -34,15 +34,18 @@ Para aprender o React, consulte a [React documentation](https://reactjs.org/).
 
 
 
+
+
 > Project built during [Alura's React Immersion]
 
 ## How to run?
 
 Right after downloading the project, access the directory and you can run:
 
-### `npm install`
-### `npm start`
-
+```sh
+npm install
+npm start
+```
 Runs the app in the development mode.<br />
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
