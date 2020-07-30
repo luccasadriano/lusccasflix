@@ -12,13 +12,11 @@ pt-BR
 
 Logo após baixar o projeto, acessar o diretório e você pode executar:
 
-```sh
-### `npm install`
-### `npm start`
-
+##```sh
+npm install
+npm start
 ```
-### `npm install`
-### `npm start`
+
 
 Executa o aplicativo no modo de desenvolvimento.<br />
 Abra [http://localhost:3000](http://localhost:3000) para visualizá-lo no navegador.
