@@ -1,8 +1,5 @@
 # LusccasFlix
 
-<p align="center">
-  <img alt="Logo do projeto" width="150px" src="https://github.com/luccasadriano/lusccasflix/blob/master/src/assets/img/Logot60.png />
-</p>
 
 pt-BR
 
