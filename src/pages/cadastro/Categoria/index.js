@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import PageDefault from '../../../components/PageDefault'
 import FormField from '../../../components/FormeField'
+import Button from '../../../components/Button'
 
 
-function Cadastrocategoria(){
+function CadastroCategoria(){
   const valoresIniciais = {
     nome: '',
     descricao: '',
@@ -22,11 +23,11 @@ function Cadastrocategoria(){
     })
   }
 
-  function handleChange(infosDoEvento){
-    // const { getAttribute, value } = infosDoEvento.target
+  function handleChange(event){
+    // const { getAttribute, value } = event.target
     setValue(
-      infosDoEvento.target.getAttribute('name'),
-      infosDoEvento.target.value
+      event.target.getAttribute('name'),
+      event.target.value
     )
   }
 
@@ -34,11 +35,9 @@ function Cadastrocategoria(){
      <PageDefault>
        <h1>Cadastrar categoria: {values.nome}</h1>
 
-      <form onSubmit={function handleSubmit(infosDoEvento){
-         infosDoEvento.preventDefault()
-         setCategorias([
-          ...categorias,
-          values
+      <form onSubmit={function handleSubmit(event){
+         event.preventDefault()
+         setCategorias([...categorias, values
          ])
 
          setValues(valoresIniciais)
@@ -54,22 +53,12 @@ function Cadastrocategoria(){
         onChange = { handleChange }
        />
 
-        {/* <div>
-          <label>
-            Descrição: 
-            <textarea 
-            type="text"
-            value={values.descricao}
-            name='descricao'
-            onChange = { handleChange }
-            />
-          </label>
-         </div> */}
-
          <FormField
+         as="textarea"
          label = "Descrição"
          type = "textarea"
          name='descricao'
+
          value = {values.descricao}
          onChange = { handleChange }
         />
@@ -82,17 +71,17 @@ function Cadastrocategoria(){
           onChange = { handleChange }
         />
 
-         <button>
+         <Button>
            Cadastrar
-         </button>
+         </Button>
 
       </form>
 
           <ul>
 
-            {categorias.map((categoria, indice) => {
+            {categorias.map((categoria) => {
               return(
-                <li key={`${categoria} ${indice}`}> 
+                <li key={`${categoria.nome}`}> 
                   {categoria.nome}
                 </li>
               )
@@ -107,4 +96,4 @@ function Cadastrocategoria(){
    )
  }
 
- export default Cadastrocategoria
+ export default CadastroCategoria
